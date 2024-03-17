@@ -183,6 +183,9 @@ conda activate character-factory
 conda install python=3.11
 ```
 ```
+CMAKE_ARGS="-DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS" pip install llama-cpp-python
+```
+```
 pip install -r requirements.txt
 ```
 
@@ -220,6 +223,9 @@ conda activate character-factory
 ```
 ```
 conda install python=3.11
+```
+```
+CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python
 ```
 ```
 pip install -r requirements-cuda.txt
@@ -260,7 +266,7 @@ conda activate character-factory
 conda install python=3.11
 ```
 ```
-CT_METAL=1 pip install ctransformers --no-binary ctransformers
+CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python
 ```
 ```
 pip install -r requirements.txt
