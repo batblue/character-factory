@@ -85,7 +85,7 @@ def load_models():
     global llm
     gpu_layers = 0
     if torch.cuda.is_available() or torch.backends.mps.is_available():
-        gpu_layers = 110
+        gpu_layers = 256
         print("Loading LLM to GPU...")
     else:
         print("Loading LLM to CPU...")
